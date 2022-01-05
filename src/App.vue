@@ -2,14 +2,21 @@
   <button @click="handleClick">Click</button>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'App',
   methods: {
-    handleClick(e){
+    handleClick(e:any){
       console.log(e)
+      if (ga) {
+        ga('send', 'button_click')
+      }
     }
   }
+}
+
+function ga(arg0: string, arg1: string) {
+throw new Error("Function not implemented.")
 }
 </script>
 <style>
