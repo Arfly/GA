@@ -8,16 +8,13 @@ export default {
   methods: {
     handleClick(e:any){
       console.log(e)
-      if (ga) {
-        ga('send', 'button_click')
+      if (gtag) {
+        gtag('send', 'button_click')
       }
     }
   }
 }
 
-function ga(arg0: string, arg1: string) {
-throw new Error("Function not implemented.")
-}
 </script>
 <style>
 #app {
