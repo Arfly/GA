@@ -15,16 +15,22 @@
       gtag('config', 'G-GD74GE3JR7');
     </script>
     
-    <link rel="modulepreload" href="./assets/vendor.af32491f.e4344974.e4344974.js">
+    <!-- <link rel="modulepreload" href="./assets/vendor.af32491f.e4344974.e4344974.js">
     
     
     
     <script type="module" crossorigin src="./assets/index.5c8003cf.js"></script>
-    <link rel="stylesheet" href="./assets/index.06d14ce2.css">
+    <link rel="stylesheet" href="./assets/index.06d14ce2.css"> -->
   </head>
   <body>
     <h1>Test For Google Analytics</h1>
-    <div id="app"></div>
+    <!-- <div id="app"></div> -->
+    <button id="button">CLICK</button>
     
   </body>
+  <script>
+    document.getElementById('button').addEventListener('click',()=>{
+      gtag('event', 'button_click', { time:123, url:'baidu.com' })
+    })
+  </script>
 </html>
